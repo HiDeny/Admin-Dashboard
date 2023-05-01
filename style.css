@@ -349,7 +349,7 @@
   }
 
 
-  /* My CSS */
+/* My CSS */
 
 * {
   border: 0.5px red solid;
@@ -370,11 +370,20 @@
 /* SIDEBAR */
 .sidebar {
   display: grid;
-  grid-template-rows: 150px auto auto;
+  grid-template-rows: 150px 400px 400px;
   grid-row: 1 / -1;
 
   background-color: rgb(85, 147, 246);
   color: white;
+}
+
+.sidebar a:visited, a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: rgb(194, 194, 194);
 }
 
 .logo {
