@@ -5,48 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Admin Dashboard Project</title>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="logo">
-                <span>IMG</span>
-                <h1>Dashboard</h1>
+                <h1><i class="material-icons">home</i> Dashboard</h1>
             </div>
             <div class="nav">
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Message</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    <li><i class="material-icons">home</i> Home</li>
+                    <li><i class="material-icons">person</i> Profile</li>
+                    <li><i class="material-icons">chat</i> Message</li>
+                    <li><i class="material-icons">history</i> History</li>
+                    <li><i class="material-icons">task</i> Tasks</li>
+                    <li><i class="material-icons">group</i> Communities</li>
                 </ul>
             </div>
             <div class="settings">
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li><i class="material-icons">settings</i> Settings</li>
+                    <li><i class="material-icons">support</i> Support</li>
+                    <li><i class="material-icons">shield</i> Privacy</li>
                 </ul>
             </div>
         </div>
 
         <div class="header">
             <div class="search">
-                <p>S</p>
-                <p>Search</p>
+                <span><i class="material-icons">search</i><input type="search" name="searchBar" id="searchBar"></span>
             </div>
             <div class="login">
-                <p>Bell</p>
+                <i>Bell</i>
                 <p>IMG</p>
                 <p>NAME</p>
             </div>
             <div class="profile">
                 <p>IMG</p>
-                <p>Small Text</p>
-                <p>name and TAG</p>
+                <div class="user">
+                    <p>Hi there,</p>
+                    <h2>Name (@tag)</h2>
+                </div>
             </div>
             <div class="add">
                 <button>New</button>
@@ -57,7 +58,9 @@
 
         <div class="main">
             <div class="projects">
-                <h2>Your Projects</h2>
+                <div class="title">
+                    <p>Your Projects</p>
+                </div>
                 <div class="project">
                     <h3>Name</h3>
                     <p>Text</p>
@@ -117,22 +120,22 @@
             </div>
             <div class="trending">
                 <div class="t-profile">
-                    <h2>IMG</h2>
+                    <p>IMG</p>
                     <p>TAG</p>
                     <p>Description</p>
                 </div>
                 <div class="t-profile">
-                    <h2>IMG</h2>
+                    <p>IMG</p>
                     <p>TAG</p>
                     <p>Description</p>
                 </div>
                 <div class="t-profile">
-                    <h2>IMG</h2>
+                    <p>IMG</p>
                     <p>TAG</p>
                     <p>Description</p>
                 </div>
                 <div class="t-profile">
-                    <h2>IMG</h2>
+                    <p>IMG</p>
                     <p>TAG</p>
                     <p>Description</p>
                 </div>

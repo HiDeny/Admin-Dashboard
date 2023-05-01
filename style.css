@@ -351,33 +351,138 @@
 
   /* My CSS */
 
-  :root {
-    font-family: Helvetica, Arial, sans-serif;
-  }
+* {
+  border: 0.5px red solid;
+}
+
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+}
 
 .container {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
 }
 
 /* SIDEBAR */
 .sidebar {
   display: grid;
-  grid-template-rows: 1fr 4fr 3fr;
+  grid-template-rows: 150px auto auto;
   grid-row: 1 / -1;
 
-  background-color: lightblue;
+  background-color: rgb(85, 147, 246);
+  color: white;
 }
 
+.logo {
+  display: grid;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+
+  display: grid;
+  grid-template-rows: repeat(6, 50px);
+  gap: 10px;
+  align-items: center;
+}
+
+.settings ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+
+  display: grid;
+  grid-template-rows: repeat(6, 50px);
+  gap: 10px;
+  align-items: center;
+}
+
+.sidebar i {
+  margin-left: 25px;
+  margin-right: 25px;
+}
 /* HEADER */
 .header {
   grid-row: 1 / 2;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
+
+.search {
+  display: grid;
+  align-items: center;
+}
+
+#searchBar {
+  background-color: lightgray;
+  width: 80%;
+  height: 35px;
+  border-radius: 20px;
+}
+
 
 /* MAIN */
 .main {
   grid-row: 2 / 3;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+
+  background-color: gainsboro;
+}
+
+.projects {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.title {
+  grid-column: 1 / -1;
+  height: 50px;
+}
+
+.project {
+  background-color: orange;
+  height: 200px;
+  width: 300px;
+  grid-auto-flow: row;
+}
+
+.annoucements {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+
+  background-color: gray;
+  height: 500px;
+}
+
+
+.trending {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+
+  background-color: lightcoral;
+  height: 500px;
+}
+
+.t-profile {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
