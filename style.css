@@ -352,7 +352,7 @@
 /* My CSS */
 
 * {
-  border: 0.5px red solid;
+  /* border: 0.5px rgba(255, 0, 0, 0.514) solid; */
 }
 
 :root {
@@ -373,7 +373,7 @@
   grid-template-rows: 150px 400px 400px;
   grid-row: 1 / -1;
 
-  background-color: rgb(85, 147, 246);
+  background-color: rgb(53, 138, 235);
   color: white;
 }
 
@@ -438,22 +438,145 @@
 }
 /* HEADER */
 .header {
+  padding-top: 20px;
+  margin-bottom: 20px;
   grid-row: 1 / 2;
 
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+
+  box-shadow: 0px 5px 10px 0px rgb(162, 162, 162);;
 }
 
 .search {
   display: grid;
+  grid-template-columns: 50px 50px auto;
   align-items: center;
 }
 
+.search a {
+  grid-column: 2 / 3;
+}
+
+.search a:visited, a:link {
+  color: black;
+  text-decoration: none;
+}
+
 #searchBar {
-  background-color: lightgray;
-  width: 80%;
+  background-color: rgb(222, 222, 222);
   height: 35px;
   border-radius: 20px;
+  width: 90%;
+  padding: 20px;
+  font-size: 1.5rem;
+  outline: transparent;
+  border: transparent;
+}
+
+#searchBar:focus {
+  outline: transparent;
+}
+
+.search .material-symbols-outlined {
+  display: grid;
+  align-items: center;
+  font-size: 30px;
+}
+
+.profileImage {
+  border-radius: 50%;
+}
+
+.login {
+  display: grid;
+  grid-template-columns: 50px 70px auto 70px;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+
+.login a:visited, a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.login a {
+  display: grid;
+  margin: 0;
+  justify-content: center;
+}
+
+.login .material-symbols-outlined {
+  display: grid;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.login .profileImage {
+  display: grid;
+  /* justify-content: center; */
+  width: 60px;
+}
+
+.login p {
+  font-size: 25px;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 50px 130px auto 20px ;
+}
+
+.profile .profileImage {
+  width: 110px;
+}
+
+.avatar {
+  grid-column: 2 / 3;
+  
+  display: grid;
+  align-items: center;
+}
+
+.user {
+  display: grid;
+  grid-template-rows: 20px 1fr 1fr 20px;
+  gap: 0px;
+  align-items: center;
+}
+
+.user p {
+  grid-row: 2 / 3;
+  align-self: end;
+  margin-bottom: 5px;
+}
+
+.user h2 {
+  grid-row: 3 / 4;
+  align-self: start;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.add {
+  display: grid;
+  grid-template-columns: repeat(3, auto) 90px;
+  /* gap: 20px; */
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+
+.add button {
+  background-color: rgb(53, 138, 235);
+  color: white;
+  font-size: 20px;
+  width: 120px;
+  padding: 15px;
+  border-radius: 30px;
+  border: transparent;
+  justify-self: end;
 }
 
 
@@ -468,7 +591,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: gainsboro;
+  background-color: rgb(255, 255, 255);
 }
 
 .projects {
