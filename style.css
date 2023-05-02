@@ -364,7 +364,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
 }
 
 /* SIDEBAR */
@@ -375,6 +375,11 @@
 
   background-color: rgb(85, 147, 246);
   color: white;
+}
+
+.sidebar a {
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 .sidebar a:visited, a:link {
@@ -388,6 +393,18 @@
 
 .logo {
   display: grid;
+  align-content: center;
+  justify-content: start;
+}
+
+
+.logo .material-symbols-outlined {
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 50px;
+}
+
+.logo a {
   align-items: center;
 }
 
@@ -448,6 +465,8 @@
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 15px;
+  justify-content: center;
+  align-items: center;
 
   background-color: gainsboro;
 }
@@ -474,9 +493,9 @@
   grid-auto-flow: row;
 }
 
-.annoucements {
+.announcements {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 40px, repeat(2, 1fr);
 
   background-color: gray;
   height: 500px;
