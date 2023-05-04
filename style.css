@@ -352,7 +352,7 @@
 /* My CSS */
 
 * {
-  /* border: 0.5px rgba(255, 0, 0, 0.514) solid; */
+  border: 0.5px rgba(255, 0, 0, 0.514) solid;
 }
 
 :root {
@@ -443,7 +443,7 @@
   padding-top: 20px;
   grid-row: 1 / 2;
   z-index: 1;
-  padding-right: 90px;
+  padding-right: 45px;
 
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -588,7 +588,7 @@
 
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 15px;
+  gap: 35px;
   justify-content: center;
   background-color: rgb(244, 244, 244);
   padding-bottom: 50px;
@@ -597,12 +597,14 @@
 .projects {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-template-rows: 50px repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
   margin-left: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 370px));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 200px));
+  gap: 50px;
 }
 
 .title {
@@ -619,74 +621,68 @@
 
 .project {
   background-color: white;
-  box-sizing: border-box;
-  height: 250px;
-  width: 400px;
   border-radius: 10px;
   padding: 25px;
   box-shadow: 0px 5px 10px 0px rgb(162, 162, 162);
   border-left: orange 5px solid;
 
   display: grid;
-  grid-template-rows: 1fr 50px;
+  /* grid-template-rows: 1fr 40px; */
   grid-template-columns: 1fr 1fr;
-  /* align-self: center; */
 }
 
 .content {
-  display: grid;
+  /* display: grid; */
   grid-column: 1 / -1;
 }
 
-.content > * {
+.content h3 {
   margin: 0;
+  padding-bottom: 5px;
 }
 
+.content p {
+  color: gray;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+
 .share-post {
-  float: right;
   display: grid;
   grid-auto-flow: column;
   gap: 20px;
   align-items: end;
   grid-column: 2 / 3;
   justify-self: end;
-  align-self: start;
+  margin-top: 10px;
+}
+
+.share-post a:visited {
+  color: black;
 }
 
 /* SIDE */
 
 .side {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  gap: 10px;
   background-color: rgb(244, 244, 244);
-  padding-right: 90px;
+  padding-right: 45px;
+  font-size: 0.7rem;
 
 }
-
-.announcements {
-  display: grid;
-  grid-template-rows: auto 1fr 1fr 1fr;
-
-  max-height: 500px;
-}
-
-.announcements > .info > * {
-  margin: 0;
-}
-
 
 .trending {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  max-height: 500px;
+  grid-template-rows: repeat(auto-fit, 1fr);
 }
 
 .t-profile {
   display: grid;
-  grid-template-columns: 100px auto;
-  grid-template-rows: 1fr 1fr;
-  height: 100px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
 }
 
 .t-profile .avatar {
@@ -694,12 +690,12 @@
   grid-column: 1 / 2;
 }
 
-.trending > .t-profile > * {
-  margin: 0;
-  background-color: darkgoldenrod;
+.t-profile .avatar img {
+  width: 50px;
 }
 
 .card {
+  display: grid;
   background-color: white;
   box-sizing: border-box;
   border-radius: 10px;
